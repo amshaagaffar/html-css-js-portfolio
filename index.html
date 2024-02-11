@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Amsha Gaffar</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Amsha Gaffar</div>
+        <div class="hamburger-menu" >
+            <div class="hamburger-icon" oneclick="toggleMenu()">
+                <span> </span>
+                <span> </span>
+                <span> </span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" oneclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" oneclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" oneclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" oneclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+      <div class="section_pic-container">
+        <img src="pics/IMG_8764-modified.png" alt="Amsha Gaffar profile picture"/>
+      </div>
+      <div class="section_text" >
+        <p class="section_text_p1">Hi, I'm </p>
+        <h1 class="title">Amsha Gaffar</h1>
+        <p class="section_text_p2"> Aspiring Frontend Developer</p>
+        <div class="btn-container" >
+          <button class="btn btn-color-2"
+          onclick="window.open('./assets/AmshaGaffar_Resume.pdf')"
+          >Download CV</button>
+          <button class="btn btn-color-1"
+          onclick="location.href='./#contact'"
+          >Contact Info</button>
+        </div>
+      </div>
+      <div id="socials-container">
+        <img 
+        src="./assets/linkedin.png" 
+        alt="My LinkedIn profile" 
+        class="icon" 
+        onclick="location.href='http://linkedin.com/in/amsha-gaffar'"/>
+        <img 
+        src="./assets/github.png" 
+        alt="My Github profile" 
+        class="icon" 
+        onclick="location.href='http://github.com'"/>
+      </div>
+    </section>
+    <section id = "about">
+      <p class="section_text_p1">Get to Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section_pic-container">
+          <img src="./assets/about-pic.png" alt="Profile Picture" class="about-pic">
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="./assets/experience.png" alt="Experience icon" class="icon"/>
+              <h3>Experience</h3>
+              <p>2+ years <br> Frontend Developer </p>
+            </div>
+            <div class="details-container">
+              <img src="./assets/education.png" alt="Education icon" class="icon"/>
+              <h3>Education</h3>
+              <p>Double Majoring in Psychology & Computer Science <br> B.S. in Computer Science </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>add text here later</p>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+    </section>
+    <section id="experience">
+      <p class="section_text_p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+            
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                <div>
+                  <h3>C++</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+    </section>
+    <section id="projects">
+      <p class="section_text_p1">
+        Browse my Recent
+      </p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-1.png" alt="Project 1" class="project-img">
+          </div>
+          <h2 class="experience-sub-title project-title">Project One</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/amshaagaffar/html-css-js-portfolio.git'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/amshaagaffar/html-css-js-portfolio.git'">
+              Live Demo
+            </button>
+          </div>
+          </div>
+          <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-2.png" alt="Project 2" class="project-img">
+          </div>
+          <h2 class="experience-sub-title project-title">Project Two</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/amshaagaffar/html-css-js-portfolio.git'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/amshaagaffar/html-css-js-portfolio.git'">
+              Live Demo
+            </button>
+          </div>
+          </div>
+          <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-3.png" alt="Project 3" class="project-img">
+          </div>
+          <h2 class="experience-sub-title project-title">Project Three</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/amshaagaffar/html-css-js-portfolio.git'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/amshaagaffar/html-css-js-portfolio.git'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+      `</div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+    </section>
+    <section id="contact">
+      <p class="section_text_p1">
+        Get in Touch!
+      </p>
+      <h1 class="title" >Contact Me!</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/email.png" alt=" mail icon" class="icon contact-icon email-icon" />
+          <p><a href= "mailto:amsha.gaffar03@gmail.com" >amsha.gaffar03@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+          <p><a href= "https:////linkedin.com/in/amsha-gaffar" >LinkedIn</a></p>
+        </div>
+      </div>
+
+    </section>
+    <footer>
+      <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      </nav>
+      <p>Copyright &#169; 2024 Amsha Gaffar. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+ </body>
+</html>
